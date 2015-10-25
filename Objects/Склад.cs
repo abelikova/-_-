@@ -31,15 +31,18 @@ namespace IIS.АСУ_Склад
     [View("СкладE", new string[] {
             "Номер as \'Номер\'",
             "Адрес as \'Адрес\'",
-            "Кладовщик.ФИО",
-            "Кладовщик"}, Hidden=new string[] {
-            "Кладовщик.ФИО"})]
+            "Кладовщик as \'Кладовщик\'",
+            "Кладовщик.Фамилия"}, Hidden=new string[] {
+            "Кладовщик.Фамилия"})]
     [AssociatedDetailViewAttribute("СкладE", "ТоварНаСкладе", "ТоварНаСкладеE", true, "", "Товар на складе", true, new string[] {
             ""})]
-    [MasterViewDefineAttribute("СкладE", "Кладовщик", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО")]
+    [MasterViewDefineAttribute("СкладE", "Кладовщик", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Фамилия")]
     [View("СкладL", new string[] {
             "Номер as \'Номер\'",
-            "Адрес as \'Адрес\'"})]
+            "Адрес as \'Адрес\'",
+            "Кладовщик",
+            "Кладовщик.Фамилия as \'Кладовщик\'"}, Hidden=new string[] {
+            "Кладовщик"})]
     public class Склад : ICSSoft.STORMNET.DataObject
     {
         
@@ -62,6 +65,7 @@ namespace IIS.АСУ_Склад
         // *** Start programmer edit section *** (Склад.Номер CustomAttributes)
 
         // *** End programmer edit section *** (Склад.Номер CustomAttributes)
+        [NotNull()]
         public virtual int Номер
         {
             get
@@ -94,6 +98,7 @@ namespace IIS.АСУ_Склад
 
         // *** End programmer edit section *** (Склад.Адрес CustomAttributes)
         [StrLen(255)]
+        [NotNull()]
         public virtual string Адрес
         {
             get

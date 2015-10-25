@@ -29,13 +29,25 @@ namespace IIS.АСУ_Склад
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("СотрудникE", new string[] {
-            "ФИО as \'ФИО\'"})]
+            "Фамилия",
+            "Имя",
+            "Отчество",
+            "ТабельныйНомер as \'Табельный номер\'"})]
     [View("СотрудникL", new string[] {
-            "ФИО as \'ФИО\'"})]
+            "Фамилия",
+            "Имя",
+            "Отчество",
+            "ТабельныйНомер as \'Табельный номер\'"})]
     public class Сотрудник : ICSSoft.STORMNET.DataObject
     {
         
-        private string fФИО;
+        private string fФамилия;
+        
+        private string fИмя;
+        
+        private string fОтчество;
+        
+        private int fТабельныйНомер;
         
         // *** Start programmer edit section *** (Сотрудник CustomMembers)
 
@@ -43,34 +55,133 @@ namespace IIS.АСУ_Склад
 
         
         /// <summary>
-        /// ФИО.
+        /// Фамилия.
         /// </summary>
-        // *** Start programmer edit section *** (Сотрудник.ФИО CustomAttributes)
+        // *** Start programmer edit section *** (Сотрудник.Фамилия CustomAttributes)
 
-        // *** End programmer edit section *** (Сотрудник.ФИО CustomAttributes)
+        // *** End programmer edit section *** (Сотрудник.Фамилия CustomAttributes)
         [StrLen(255)]
-        public virtual string ФИО
+        [NotNull()]
+        public virtual string Фамилия
         {
             get
             {
-                // *** Start programmer edit section *** (Сотрудник.ФИО Get start)
+                // *** Start programmer edit section *** (Сотрудник.Фамилия Get start)
 
-                // *** End programmer edit section *** (Сотрудник.ФИО Get start)
-                string result = this.fФИО;
-                // *** Start programmer edit section *** (Сотрудник.ФИО Get end)
+                // *** End programmer edit section *** (Сотрудник.Фамилия Get start)
+                string result = this.fФамилия;
+                // *** Start programmer edit section *** (Сотрудник.Фамилия Get end)
 
-                // *** End programmer edit section *** (Сотрудник.ФИО Get end)
+                // *** End programmer edit section *** (Сотрудник.Фамилия Get end)
                 return result;
             }
             set
             {
-                // *** Start programmer edit section *** (Сотрудник.ФИО Set start)
+                // *** Start programmer edit section *** (Сотрудник.Фамилия Set start)
 
-                // *** End programmer edit section *** (Сотрудник.ФИО Set start)
-                this.fФИО = value;
-                // *** Start programmer edit section *** (Сотрудник.ФИО Set end)
+                // *** End programmer edit section *** (Сотрудник.Фамилия Set start)
+                this.fФамилия = value;
+                // *** Start programmer edit section *** (Сотрудник.Фамилия Set end)
 
-                // *** End programmer edit section *** (Сотрудник.ФИО Set end)
+                // *** End programmer edit section *** (Сотрудник.Фамилия Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Имя.
+        /// </summary>
+        // *** Start programmer edit section *** (Сотрудник.Имя CustomAttributes)
+
+        // *** End programmer edit section *** (Сотрудник.Имя CustomAttributes)
+        [StrLen(255)]
+        [NotNull()]
+        public virtual string Имя
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Сотрудник.Имя Get start)
+
+                // *** End programmer edit section *** (Сотрудник.Имя Get start)
+                string result = this.fИмя;
+                // *** Start programmer edit section *** (Сотрудник.Имя Get end)
+
+                // *** End programmer edit section *** (Сотрудник.Имя Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Сотрудник.Имя Set start)
+
+                // *** End programmer edit section *** (Сотрудник.Имя Set start)
+                this.fИмя = value;
+                // *** Start programmer edit section *** (Сотрудник.Имя Set end)
+
+                // *** End programmer edit section *** (Сотрудник.Имя Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Отчество.
+        /// </summary>
+        // *** Start programmer edit section *** (Сотрудник.Отчество CustomAttributes)
+
+        // *** End programmer edit section *** (Сотрудник.Отчество CustomAttributes)
+        [StrLen(255)]
+        public virtual string Отчество
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Сотрудник.Отчество Get start)
+
+                // *** End programmer edit section *** (Сотрудник.Отчество Get start)
+                string result = this.fОтчество;
+                // *** Start programmer edit section *** (Сотрудник.Отчество Get end)
+
+                // *** End programmer edit section *** (Сотрудник.Отчество Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Сотрудник.Отчество Set start)
+
+                // *** End programmer edit section *** (Сотрудник.Отчество Set start)
+                this.fОтчество = value;
+                // *** Start programmer edit section *** (Сотрудник.Отчество Set end)
+
+                // *** End programmer edit section *** (Сотрудник.Отчество Set end)
+            }
+        }
+        
+        /// <summary>
+        /// ТабельныйНомер.
+        /// </summary>
+        // *** Start programmer edit section *** (Сотрудник.ТабельныйНомер CustomAttributes)
+
+        // *** End programmer edit section *** (Сотрудник.ТабельныйНомер CustomAttributes)
+        [DisableInsertProperty(true)]
+        [NotNull()]
+        public virtual int ТабельныйНомер
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Сотрудник.ТабельныйНомер Get start)
+
+                // *** End programmer edit section *** (Сотрудник.ТабельныйНомер Get start)
+                int result = this.fТабельныйНомер;
+                // *** Start programmer edit section *** (Сотрудник.ТабельныйНомер Get end)
+
+                // *** End programmer edit section *** (Сотрудник.ТабельныйНомер Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Сотрудник.ТабельныйНомер Set start)
+
+                // *** End programmer edit section *** (Сотрудник.ТабельныйНомер Set start)
+                this.fТабельныйНомер = value;
+                // *** Start programmer edit section *** (Сотрудник.ТабельныйНомер Set end)
+
+                // *** End programmer edit section *** (Сотрудник.ТабельныйНомер Set end)
             }
         }
         

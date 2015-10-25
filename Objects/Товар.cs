@@ -64,6 +64,8 @@ namespace IIS.АСУ_Склад
         // *** Start programmer edit section *** (Товар.Код CustomAttributes)
 
         // *** End programmer edit section *** (Товар.Код CustomAttributes)
+        [DisableInsertProperty(true)]
+        [NotNull()]
         public virtual int Код
         {
             get
@@ -96,6 +98,7 @@ namespace IIS.АСУ_Склад
 
         // *** End programmer edit section *** (Товар.Название CustomAttributes)
         [StrLen(255)]
+        [NotNull()]
         public virtual string Название
         {
             get
@@ -191,6 +194,7 @@ namespace IIS.АСУ_Склад
         // *** Start programmer edit section *** (Товар.Цена CustomAttributes)
 
         // *** End programmer edit section *** (Товар.Цена CustomAttributes)
+        [NotNull()]
         public virtual double Цена
         {
             get

@@ -30,10 +30,10 @@ namespace IIS.АСУ_Склад
     [Caption("Строка заказа")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("СтрокаЗаказаE", new string[] {
+            "Товар as \'Товар\'",
             "Количество as \'Количество\'",
             "ЦенаСНалогами as \'Цена с налогами\'",
             "Сумма as \'Сумма\'",
-            "Товар as \'Товар\'",
             "Товар.Название as \'Название\'"}, Hidden=new string[] {
             "Товар.Название"})]
     [MasterViewDefineAttribute("СтрокаЗаказаE", "Товар", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Название")]

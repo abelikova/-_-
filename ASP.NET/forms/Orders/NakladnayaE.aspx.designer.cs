@@ -139,6 +139,15 @@ namespace IIS.АСУ_Склад {
         protected global::ICSSoft.STORMNET.Web.AjaxControls.AlphaNumericTextBox ctrlНомер;
         
         /// <summary>
+        /// ctrlНомерValidator элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ctrlНомерValidator;
+        
+        /// <summary>
         /// ctrlДатаЗаполненияLabel элемент управления.
         /// </summary>
         /// <remarks>
@@ -155,6 +164,15 @@ namespace IIS.АСУ_Склад {
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::ICSSoft.STORMNET.Web.AjaxControls.DatePicker ctrlДатаЗаполнения;
+        
+        /// <summary>
+        /// ctrlДатаЗаполненияValidator элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ctrlДатаЗаполненияValidator;
         
         /// <summary>
         /// ctrlЗаказLabel элемент управления.

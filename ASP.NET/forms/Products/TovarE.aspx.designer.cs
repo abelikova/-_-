@@ -31,6 +31,15 @@ namespace IIS.АСУ_Склад {
         protected global::ICSSoft.STORMNET.Web.AjaxControls.AlphaNumericTextBox ctrlКод;
         
         /// <summary>
+        /// ctrlКодValidator элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ctrlКодValidator;
+        
+        /// <summary>
         /// ctrlНазваниеLabel элемент управления.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,15 @@ namespace IIS.АСУ_Склад {
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox ctrlНазвание;
+        
+        /// <summary>
+        /// ctrlНазваниеValidator элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ctrlНазваниеValidator;
         
         /// <summary>
         /// ctrlЕдиницаИзмеренияLabel элемент управления.
@@ -101,5 +119,14 @@ namespace IIS.АСУ_Склад {
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::ICSSoft.STORMNET.Web.AjaxControls.DecimalTextBox ctrlЦена;
+        
+        /// <summary>
+        /// ctrlЦенаValidator элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ctrlЦенаValidator;
     }
 }

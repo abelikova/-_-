@@ -52,6 +52,7 @@ namespace IIS.АСУ_Склад
         // *** Start programmer edit section *** (Документ.Номер CustomAttributes)
 
         // *** End programmer edit section *** (Документ.Номер CustomAttributes)
+        [NotNull()]
         public virtual int Номер
         {
             get
@@ -83,6 +84,7 @@ namespace IIS.АСУ_Склад
         // *** Start programmer edit section *** (Документ.ДатаЗаполнения CustomAttributes)
 
         // *** End programmer edit section *** (Документ.ДатаЗаполнения CustomAttributes)
+        [NotNull()]
         public virtual System.DateTime ДатаЗаполнения
         {
             get

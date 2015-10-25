@@ -14,7 +14,7 @@ namespace IIS.АСУ_Склад
         /// </summary>
         public СотрудникL() : base(Сотрудник.Views.СотрудникL)
         {
-            EditPage = string.Empty;
+            EditPage = СотрудникE.FormPath;
         }
                 
         /// <summary>
